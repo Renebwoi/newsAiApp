@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewsToday.ng</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+        header {
+            background-color: #ffc800;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header input[type="text"] {
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffc800;
+            gap: 30px;
+            padding: 10px;
+            font-weight: bold;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+        h1 {
+            color: white;
+        }
+        .section {
+            padding: 20px;
+        }
+        .latest, .trending {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .latest article, .trending article {
+            width: 23%;
+            min-width: 250px;
+            border-bottom: 1px solid #ddd;
+        }
+        .latest article:first-child {
+            width: 100%;
+            display: flex;
+        }
+        .latest article img, .trending article img {
+            width: 100%;
+            height: auto;
+        }
+        .latest article:first-child img {
+            width: 50%;
+        }
+        .latest article:first-child .content {
+            padding: 10px;
+        }
+        .footer {
+            background-color: #ffc800;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .newsletter {
+            margin: 20px auto;
+        }
+        .newsletter input {
+            padding: 10px;
+            width: 300px;
+        }
+        .newsletter button {
+            padding: 10px;
+            background: white;
+            border: none;
+            cursor: pointer;
+        }
+        .categories {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NewsTower</h1>
+        <input type="text" placeholder="Search" />
+    </header>
+    <nav>
+        <a href="#">News</a>
+        <a href="#">Politics</a>
+        <a href="#">Tech</a>
+        <a href="#">Business</a>
+        <a href="#">Lifestyle</a>
+        <a href="#">Sports</a>
+        <a href="#">Opinion</a>
+    </nav>
+
+    <div class="section">
+        <h2>Latest</h2>
+        <div class="latest">
+            <article>
+                <img src="pic.png" alt="Police arrest" />
+                <div class="content">
+                    <h3>Police arrest cleric over Kwara final-year student's murder</h3>
+                    <p>The highly anticipated game "Unseen Dragons" is set to release on consoles and PC...</p>
+                    <p><em>Joan Smith</em></p>
+                </div>
+            </article>
+            <article>
+                <img src="pic.png" alt="JAMB Registrar" />
+                <h3>Over 11,000 underage registered for 2025 UTME - JAMB Registrar</h3>
+                <p><em>Joan Smith</em></p>
+            </article>
+            <article>
+                <img src="pic.png" alt="Fuel" />
+                <h3>NNPCL denies selling substandard fuel</h3>
+                <p><em>Joan Smith</em></p>
+            </article>
+            <article>
+                <img src="pic.png" alt="Katsina LG" />
+                <h3>Katsina LG poll: Buhari votes in Daura</h3>
+                <p><em>Joan Smith</em></p>
+            </article>
+            <article>
+                <img src="pic.png" alt="Jay-Z" />
+                <h3>Jay-Z, Diddy's accuser drops sexual assault lawsuit</h3>
+                <p><em>Joan Smith</em></p>
+            </article>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Trending</h2>
+        <div class="trending">
+            <article>
+                <img src="edo.png" alt="Edo arrests" />
+                <h3>Edo security outfit arrests 18 suspected kidnappers</h3>
+                <p><em>Joan Smith</em></p>
+            </article>
+            <article>
+                <img src="adebanjo.png" alt="Adebanjo" />
+                <h3>Adebanjo's contributions won't be forgotten - MBF</h3>
+                <p><em>Joan Smith</em></p>
+            </article>
+            <article>
+                <img src="sowore.png" alt="Sowore attacked" />
+                <h3>Sowore attacked in Lagos</h3>
+                <p><em>Joan Smith</em></p>
+            </article>
+            <article>
+                <img src="agri.png" alt="Agricultural Research" />
+                <h3>Nigeria conducts first agricultural research evaluation in 40 years</h3>
+                <p><em>Joan Smith</em></p>
+            </article>
+        </div>
+    </div>
+
+    <div class="section categories">
+        Categories<br />
+        Reviews. News. Deals. Videos. Reader Poll.
+    </div>
+
+    <div class="footer">
+        <p>At NewsToday.ng, every click is an adventure in the real world.</p>
+        <p>Whether you’re a casual or dedicated reader, we’re your go-to for the latest news, tips, and trends.</p>
+        <div class="newsletter">
+            <p>Subscribe to our newsletters. We’ll keep you in the loop.</p>
+            <input type="email" placeholder="myemail@gmail.com" />
+            <button>&rarr;</button>
+        </div>
+        <p>
+            <a href="#">News</a> | 
+            <a href="#">Reviews</a> | 
+            <a href="#">Guides</a> | 
+            <a href="#">Trending</a> | 
+            <a href="#">Platform</a>
+        </p>
+    </div>
+</body>
+</html>
