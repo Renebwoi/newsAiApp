@@ -16,12 +16,17 @@
             padding: 10px 20px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+
+            position: relative;
         }
         header input[type="text"] {
             padding: 5px;
             border: none;
             border-radius: 3px;
+            
+            position: absolute;
+            right: 30px;
         }
         nav {
             display: flex;
@@ -30,6 +35,8 @@
             gap: 30px;
             padding: 10px;
             font-weight: bold;
+
+            flex-wrap: wrap;
         }
         nav a {
             text-decoration: none;
@@ -40,6 +47,14 @@
         }
         .section {
             padding: 20px;
+        }
+        .section>h2{
+            border-bottom: 3px solid black;
+            font-size: 24px;
+        }
+        .section h3>a{
+            text-decoration: none;
+            color: black;
         }
         .latest, .trending {
             display: flex;
@@ -84,6 +99,10 @@
             border: none;
             cursor: pointer;
         }
+        .footer>p>a{
+            text-decoration: none;
+            color: white;
+        }
         .categories {
             font-size: 24px;
             margin-top: 20px;
@@ -93,6 +112,7 @@
 </head>
 <body>
     <header>
+        <img src="tanjiro-kamado-3840x2160-18414.jpeg" alt="icon" width="50px">
         <h1>NewsTower</h1>
         <input type="text" placeholder="Search" />
     </header>
@@ -112,29 +132,29 @@
             <article>
                 <img src="pic.png" alt="Police arrest" />
                 <div class="content">
-                    <h3>Police arrest cleric over Kwara final-year student's murder</h3>
+                    <h3><a href="page2.html"> Police arrest cleric over Kwara final-year student's murder</a></h3>
                     <p>The highly anticipated game "Unseen Dragons" is set to release on consoles and PC...</p>
                     <p><em>Joan Smith</em></p>
                 </div>
             </article>
             <article>
                 <img src="pic.png" alt="JAMB Registrar" />
-                <h3>Over 11,000 underage registered for 2025 UTME - JAMB Registrar</h3>
+                <h3><a href="#"> Over 11,000 underage registered for 2025 UTME - JAMB Registrar</a></h3>
                 <p><em>Joan Smith</em></p>
             </article>
             <article>
                 <img src="pic.png" alt="Fuel" />
-                <h3>NNPCL denies selling substandard fuel</h3>
+                <h3><a href="#">NNPCL denies selling substandard fuel </a></h3>
                 <p><em>Joan Smith</em></p>
             </article>
             <article>
                 <img src="pic.png" alt="Katsina LG" />
-                <h3>Katsina LG poll: Buhari votes in Daura</h3>
+                <h3><a href="#">Katsina LG poll: Buhari votes in Daura</a></h3>
                 <p><em>Joan Smith</em></p>
             </article>
             <article>
                 <img src="pic.png" alt="Jay-Z" />
-                <h3>Jay-Z, Diddy's accuser drops sexual assault lawsuit</h3>
+                <h3><a href="#">Jay-Z, Diddy's accuser drops sexual assault lawsuit</a></h3>
                 <p><em>Joan Smith</em></p>
             </article>
         </div>
@@ -145,29 +165,29 @@
         <div class="trending">
             <article>
                 <img src="edo.png" alt="Edo arrests" />
-                <h3>Edo security outfit arrests 18 suspected kidnappers</h3>
+                <h3><a href="#">Edo security outfit arrests 18 suspected kidnappers</a></h3>
                 <p><em>Joan Smith</em></p>
             </article>
             <article>
                 <img src="adebanjo.png" alt="Adebanjo" />
-                <h3>Adebanjo's contributions won't be forgotten - MBF</h3>
+                <h3><a href="#">Adebanjo's contributions won't be forgotten - MBF</a></h3>
                 <p><em>Joan Smith</em></p>
             </article>
             <article>
                 <img src="sowore.png" alt="Sowore attacked" />
-                <h3>Sowore attacked in Lagos</h3>
+                <h3><a href="#">Sowore attacked in Lagos</a></h3>
                 <p><em>Joan Smith</em></p>
             </article>
             <article>
                 <img src="agri.png" alt="Agricultural Research" />
-                <h3>Nigeria conducts first agricultural research evaluation in 40 years</h3>
+                <h3><a href="#">Nigeria conducts first agricultural research evaluation in 40 years</a></h3>
                 <p><em>Joan Smith</em></p>
             </article>
         </div>
     </div>
 
     <div class="section categories">
-        Categories<br />
+        <h2>Categories</h2> 
         Reviews. News. Deals. Videos. Reader Poll.
     </div>
 
