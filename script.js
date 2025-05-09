@@ -3,7 +3,7 @@ const data = [
         newsLink: "#",
         newsImage: "Bwala.jpg",
         newsHeading: "Breaking News: Major Event Unfolds",
-        newsAuthor: "John Doe",
+        newsAuthor: "John DEM",
         newsBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         newsCategory: "latest"
     },
